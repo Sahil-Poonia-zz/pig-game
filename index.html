@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>pig-game</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css?h=c802f0d0d977b64251528f72a0c92944">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css?h=18313f04cea0e078412a028c5361bd4e">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css?h=18313f04cea0e078412a028c5361bd4e">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css?h=18313f04cea0e078412a028c5361bd4e">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="assets/css/styles.css?h=268ec14be71ffd01eb282dc60ee49c53">
+</head>
+
+<body class="d-flex justify-content-center align-items-center" style="background-image: url(&quot;assets/img/back.jpg?h=2e0438726e3024c7c5fda6f679ee4861&quot;);background-position: center;background-size: cover;background-repeat: no-repeat;width: 100vw;height: 100vh;overflow: hidden;font-family: Lato, sans-serif;">
+    <div class="shadow-lg d-flex align-items-center wrapper" data-aos="fade" data-aos-duration="1200" data-aos-once="true" style="transform: scale(.95);">
+        <div class="d-flex flex-column flex-grow-1 justify-content-center align-items-center player-0-panel active">
+            <h1 class="text-nowrap text-uppercase text-center player-name" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="100" data-aos-once="true" id="name-0">Player 1</h1>
+            <h1 class="text-center player-score" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="50" data-aos-once="true" id="score-0">43</h1>
+            <div class="text-uppercase text-center player-current-box" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="100" data-aos-once="true">
+                <p class="player-current-label" style="margin-bottom: 0px;color: rgb(50,50,50);">Current</p>
+                <p id="current-0" class="player-current-score" style="font-size: 30px;margin-bottom: -4px;">11</p>
+            </div><img id="winner-0" src="assets/img/crown.webp?h=27635eef2bbc082b459ff12233df8876"></div>
+        <div class="d-flex flex-column flex-grow-1 justify-content-center align-items-center player-1-panel">
+            <h1 class="text-nowrap text-uppercase text-center player-name" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="100" data-aos-once="true" id="name-1">Player 2</h1>
+            <h1 class="text-center player-score" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="50" data-aos-once="true" id="score-1">72</h1>
+            <div class="text-uppercase text-center player-current-box" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100" data-aos-once="true">
+                <p class="player-current-label" style="margin-bottom: 0px;color: rgb(50,50,50);">Current</p>
+                <p id="current-1" class="player-current-score" style="font-size: 30px;margin-bottom: -4px;">0</p>
+            </div><img id="winner-1" src="assets/img/crown.webp?h=27635eef2bbc082b459ff12233df8876"></div><button class="btn btn-block text-center d-flex justify-content-center align-items-center btn-new button" type="button"><i class="icon-plus icon"></i>NEW GAME</button><button class="btn btn-block text-center d-flex justify-content-center align-items-center btn-roll button"
+            type="button" style="background-color: #e6e6e6;"><i class="icon-refresh icon"></i>ROLL DICE</button><button class="btn btn-block text-center d-flex justify-content-center align-items-center btn-hold button" type="button" style="background-color: #e6e6e6;"><i class="icon-cloud-download icon"></i>HOLD</button>
+        <img
+            class="shadow-lg dice" src="assets/img/dice-5.png?h=62bfb15ebeeb928209d2be5ce14aeb92" alt="dice"></div>
+    <footer class="footer">
+        <p class="text-center">Made with&nbsp; &nbsp;<i class="icon-heart"></i>&nbsp; &nbsp; by <a href="https://sahil-poonia.github.io/CV/" target="_blank">Sahil Poonia</a>.</p>
+    </footer><button class="btn d-flex justify-content-center align-items-center btn-instruct" data-bs-hover-animate="rubberBand" type="button" title="Rules of Game"><i class="icon ion-navicon-round" style="margin: 0;margin-top: -6px;font-size: 30px;color: rgb(255,255,255);"></i></button>
+    <button
+        class="btn d-flex justify-content-center align-items-center btn-code" data-bs-hover-animate="rubberBand" type="button" title="Rules of Game"><i class="la la-code" style="margin: 0;font-size: 30px;color: rgb(255,255,255);" title="JavaScrip code"></i></button>
+        <div class="text-center hide" id="instructions">
+            <h1 class="text-uppercase" data-aos="fade-up" data-aos-duration="1200" data-aos-once="true" style="font-size: 60px;font-weight: 100;">game rules</h1>
+            <hr data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100" data-aos-once="true" style="border-top: 5px dotted rgba(255,255,255,1);width: 180px;">
+            <p class="text-break text-left" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" data-aos-once="true" style="margin-top: 70px;width: 80%;margin-right: auto;margin-left: auto;font-size: 18px;"><strong>1.</strong>&nbsp;The&nbsp;game&nbsp;has&nbsp;2&nbsp;players,&nbsp;playing&nbsp;in&nbsp;rounds.<br><br><strong>2.</strong>&nbsp;In&nbsp;each&nbsp;turn,&nbsp;a&nbsp;player&nbsp;rolls&nbsp;a&nbsp;dice&nbsp;as&nbsp;many&nbsp;times&nbsp;as&nbsp;he&nbsp;whishes.&nbsp;Each&nbsp;result&nbsp;get&nbsp;added&nbsp;to&nbsp;his&nbsp;ROUND&nbsp;score.<br><br><strong>3.</strong>&nbsp;BUT,&nbsp;if&nbsp;the&nbsp;player&nbsp;rolls&nbsp;a&nbsp;1,&nbsp;all&nbsp;his&nbsp;ROUND&nbsp;score&nbsp;gets&nbsp;lost.&nbsp;After&nbsp;that,&nbsp;it's&nbsp;the&nbsp;next&nbsp;player's&nbsp;turn.<br><br><strong>4.</strong>&nbsp;The&nbsp;player&nbsp;can&nbsp;choose&nbsp;to&nbsp;'Hold',&nbsp;which&nbsp;means&nbsp;that&nbsp;his&nbsp;ROUND&nbsp;score&nbsp;gets&nbsp;added&nbsp;to&nbsp;his&nbsp;GLOBAL&nbsp;score.&nbsp;After&nbsp;that,&nbsp;it's&nbsp;the&nbsp;next&nbsp;player's&nbsp;turn.<br><br><strong>5.</strong>&nbsp;The&nbsp;first&nbsp;player&nbsp;to&nbsp;reach&nbsp;100&nbsp;points&nbsp;on&nbsp;GLOBAL&nbsp;score&nbsp;wins&nbsp;the&nbsp;game.<br></p>
+            <button
+                class="btn btn-close" type="button"><i class="la la-close" style="color: rgb(254,254,254);font-size: 36px;"></i></button>
+        </div>
+        <script src="assets/js/jquery.min.js?h=83e266cb1712b47c265f77a8f9e18451"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js?h=e46528792882c54882f660b60936a0fc"></script>
+        <script src="assets/js/bs-init.js?h=a24a748d1ebf2b30dec97d2c79b26872"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+        <script src="assets/js/script.js?h=7023889dfc1068735f468c8170591428"></script>
+</body>
+
+</html>
